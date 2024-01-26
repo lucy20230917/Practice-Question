@@ -19,32 +19,18 @@ Example Test Cases:
 2. date_passed('26th March', '26th March') should indicate that the scheduled date is today.
 3. date_passed('26th March', '27th March') should indicate that the scheduled date is yet to pass.
 """
-
+from datetime import datetime
 
 def date_passed(todays_date, scheduled_date):
-    today_date_list = todays_date.split()
-    scheduled_date_list = scheduled_date.split()
+    today_date = datetime.striptime(today_date, "%d %B")
+    scheduled_date = datetime.striptime(scheduled_date, "%d %B")
 
-    today_date_list_dict = {today_date_list[0]: today_date_list[1]}
-    scheduled_date_list_dict = {scheduled_date_list[0]: scheduled_date_list[1]}
-
-    month_mapping = {'January': 1, 
-                     'February': 2, 
-                     'March': 3, 
-                     'April': 4, 
-                     'May': 5, 
-                     'June': 6, 
-                     'July': 7, 
-                     'August': 8, 
-                     'September': 9, 
-                     'October': 10, 
-                     'November': 11, 
-                     'December': 12}
-
-    
-        
-
-
+    if today_date > scheduled_date:
+        print("Scheduled date has passed")
+    elif today_date == scheduled_date:
+        print("Scheduled date is today")
+    else:
+        print("Scheduled date is yet to pass")
 
     
     # Your code goes here
