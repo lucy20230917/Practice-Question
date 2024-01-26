@@ -21,4 +21,20 @@ ADD SOMETHING IN THE MIDDLE
 
 True & False
 
+## Q3 Speeding Ticket
+
+## Q4 Word Filter
+.split()
+sample:
+"""
+txt = "welcome to the jungle"
+
+x = txt.split()
+
+print(x)
+"""
+
+Converting text into a list
+
+
 
