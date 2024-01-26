@@ -30,8 +30,7 @@ def case_counter(text):
                 
             elif char.islower():
                 lowercase_counr += 1
-    print(f'Uppercase letters: {uppercase_count}')
-    print(f'Lowercase Letters: {lowercase_count}\n')
+    print(f'Uppercase letters: {uppercase_count}, Lowercase Letters: {lowercase_count}\n')
 
 
         # Your code goes here
