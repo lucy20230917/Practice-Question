@@ -13,3 +13,12 @@ print(x)
 """
 
 ADD SOMETHING IN THE MIDDLE
+
+## Q2 Letter Case Count
+.isalpha()
+.isupper()
+.islower()
+
+True & False
+
+
