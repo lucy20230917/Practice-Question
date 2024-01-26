@@ -28,19 +28,19 @@ def is_prime(number):
     largest_square = int(math.sqrt(number))
     primes = [2]
     for i in range(3, largest_square + 1, 2):
-        is_prime = True
+        is_prime_flag = True
         for prime in primes:
             if i % prime == 0:
                 is_prime = False
                 break
-        if is_prime:
+        if is_prime_flag:
             primes.append(i)
 
-   for prime in primes:
-       if number % prime == 0:
-           return False
-   return True
-            
+    for prime in primes:
+        if number % prime == 0:
+            return False
+    return True
+             
         
                 
     # Your code goes here
