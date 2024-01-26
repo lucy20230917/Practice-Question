@@ -50,4 +50,9 @@ for n in x:
 ## Q6 Leap Year Checker
 % remainder
 
+## Q7 Date Scheduler
+https://www.w3schools.com/python/python_datetime.asp
+.replace()
+
+
 
