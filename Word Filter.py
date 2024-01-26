@@ -24,11 +24,14 @@ Example Test Cases:
 def word_filter_counter(text, filter_words):
     text = text.lower()
     word_list = text.split()
+    word_counts = {}
     
     for filter_word in filter_words:
         if filter_word in word_list:
             count = word_list.count(filter_word)
-            print(f"Expected output: '{filter_word}' : {count}")
+
+            word_counts[filter_word] = count
+    return word_counts
             
             
     # Your code goes here
