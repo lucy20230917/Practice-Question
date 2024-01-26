@@ -23,13 +23,23 @@ Example Test Cases:
 import math
 
 def is_prime(number):
-    if number > 1 :
-        square_root = math.sqrt(number)
-        if isinstance(square_root):
-            print("False")
-        elif:
-            integer_square_root = int(square_root)
-            while 
+    if number <= 1 or int(math.sqrt(number))**2 == number:
+        return False
+    largest_square = int(math.sqrt(number))
+    primes = [2]
+    for i in range(3, largest_square + 1, 2):
+        is_prime = True
+        for prime in primes:
+            if i % prime == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+
+   for prime in primes:
+       if number % prime == 0:
+           return False
+   return True
             
         
                 
