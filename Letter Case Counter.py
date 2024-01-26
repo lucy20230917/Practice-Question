@@ -27,8 +27,13 @@ def case_counter(text):
         if char.isalpha():
             if char.isupper():
                 uppercase_count += 1
+                
             elif char.islower():
                 lowercase_counr += 1
+    print(f'Uppercase letters: {uppercase_count}')
+    print(f'Lowercase Letters: {lowercase_count}\n')
+
+
         # Your code goes here
     # Remember to count uppercase and lowercase letters and ignore non-alphabetic characters
     # Delete this after implementing some code inside this function.
