@@ -21,9 +21,17 @@ Example Test Cases:
 
 
 def calculate_factorial(number):
+    if number > 0 and number % int(number) = 1:
+        result = 1
+        for i in range(1,number+1):
+            result *= i
+        return result
+    else:
+        print("Error message or specific value")
+    
     # Your code goes here
     # Implement the factorial calculation using a for loop
-    pass  # Delete this after implementing some code inside this function
+    # Delete this after implementing some code inside this function
 
 
 # Test cases
