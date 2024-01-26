@@ -33,7 +33,7 @@ def word_filter_counter(text, filter_words):
             
     # Your code goes here
     # Implement the logic to filter words and count their occurrences
-    pass  # Delete this after implementing some code inside this function
+    # Delete this after implementing some code inside this function
 
 
 # Test cases
