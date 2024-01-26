@@ -20,12 +20,23 @@ Example Test Cases:
 4. is_prime(1) should return 'False', as 1 is not considered a prime number.
 """
 
+import math
 
 def is_prime(number):
+    if number > 1 :
+        square_root = math.sqrt(number)
+        if isinstance(square_root):
+            print("False")
+        elif:
+            integer_square_root = int(square_root)
+            while 
+            
+        
+                
     # Your code goes here
     # Implement the logic to determine if the number is prime
     # Return True if the number is prime, False otherwise
-    pass  # Delete this after implementing some code inside this function
+    # Delete this after implementing some code inside this function
 
 
 # Test cases
