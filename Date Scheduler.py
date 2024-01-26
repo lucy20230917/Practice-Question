@@ -21,9 +21,16 @@ Example Test Cases:
 """
 from datetime import datetime
 
+def remove_ordinal_suffix(text):
+    cleaned_text = text.replace("th", "")
+    return cleaned_text
+
 def date_passed(todays_date, scheduled_date):
-    today_date = datetime.striptime(today_date, "%d %B")
-    scheduled_date = datetime.striptime(scheduled_date, "%d %B")
+    todays_date = remove_ordinal_suffix(todays_date)
+    scheduled_date = remove_ordinal_suffix(scheduled_date)
+
+    today_date = datetime.strptime(todays_date, "%d %B")
+    scheduled_date = datetime.strptime(scheduled_date, "%d %B")
 
     if today_date > scheduled_date:
         print("Scheduled date has passed")
@@ -35,7 +42,7 @@ def date_passed(todays_date, scheduled_date):
     
     # Your code goes here
     # Implement the logic to compare the dates and print the appropriate message
-    pass  # Delete this after implementing some code inside this function
+    # Delete this after implementing some code inside this function
 
 
 # Test cases
