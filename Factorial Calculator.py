@@ -21,13 +21,18 @@ Example Test Cases:
 
 
 def calculate_factorial(number):
-    if number > 0 and number % int(number) = 1:
+    if not isinstance(number, int):
+        return "Error message or specific value for non-integer input"
+    elif number < 0:
+        return "Error message or specific value for negative input"
+    elif number == 0:
+        return 1
+    else:
         result = 1
         for i in range(1,number+1):
             result *= i
         return result
-    else:
-        print("Error message or specific value")
+    
     
     # Your code goes here
     # Implement the factorial calculation using a for loop
