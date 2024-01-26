@@ -22,6 +22,31 @@ Example Test Cases:
 
 
 def date_passed(todays_date, scheduled_date):
+    today_date_list = todays_date.split()
+    scheduled_date_list = scheduled_date.split()
+
+    today_date_list_dict = {today_date_list[0]: today_date_list[1]}
+    scheduled_date_list_dict = {scheduled_date_list[0]: scheduled_date_list[1]}
+
+    month_mapping = {'January': 1, 
+                     'February': 2, 
+                     'March': 3, 
+                     'April': 4, 
+                     'May': 5, 
+                     'June': 6, 
+                     'July': 7, 
+                     'August': 8, 
+                     'September': 9, 
+                     'October': 10, 
+                     'November': 11, 
+                     'December': 12}
+
+    
+        
+
+
+
+    
     # Your code goes here
     # Implement the logic to compare the dates and print the appropriate message
     pass  # Delete this after implementing some code inside this function
