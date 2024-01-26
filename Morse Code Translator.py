@@ -54,17 +54,17 @@ def morse_translator(text):
         "Y": "-.--",
         "Z": "--..",
     }
-  text = text.upper()
-  morse_code =[]
+    text = text.upper()
+    morse_code_list=[]
 
-  for char in text:
-     if char in morse_code_dict:
-          morse_code.append(morse_code_dict)
-     elif:
-           morse_code.append('/')
+    for char in text:
+        if char in morse_code_dict:
+            morse_code_list.append(morse_code_dict[char])
+        else:
+            morse_code_list.append('/')
 
-  morse_code_str = ''.join(morse_code)
-  return morese_code_str
+    morse_code_str = ' '.join(morse_code_list)
+    return morse_code_str
 
 
     # Your code goes here
