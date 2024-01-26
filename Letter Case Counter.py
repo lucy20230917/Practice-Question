@@ -21,9 +21,17 @@ Example Test Cases:
 
 
 def case_counter(text):
-    # Your code goes here
+    uppercase_count = 0
+    lowercase_count =0
+    for char in text:
+        if char.isalpha():
+            if char.isupper():
+                uppercase_count += 1
+            elif char.islower():
+                lowercase_counr += 1
+        # Your code goes here
     # Remember to count uppercase and lowercase letters and ignore non-alphabetic characters
-    pass  # Delete this after implementing some code inside this function.
+    # Delete this after implementing some code inside this function.
 
 
 # Test cases
