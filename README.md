@@ -36,5 +36,18 @@ print(x)
 
 Converting text into a list
 
+## Q5 Prime Number Checker
+int()
+math.sqrt() 
+range()
+sample: 3 to 19, increment by 2
+"""
+x = range(3, 20, 2)
+
+for n in x:
+  print(n)
+"""
+## Q6 Leap Year Checker
+% remainder
 
 
