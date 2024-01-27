@@ -54,5 +54,14 @@ for n in x:
 https://www.w3schools.com/python/python_datetime.asp
 .replace()
 
+## Q8 Compound Interest Calculator
+^ == **
+
+## Q9 Factorial Calculator
+instance(number, int)
+for i in range()
+
+## Q10 Fibonacci Sequence Calculator
+while loop
 
 
