@@ -2,6 +2,7 @@
 Practices IN Moodle
 ## Q1 Morse Code translator
 .join()
+
 sample:
 
 """
@@ -16,7 +17,9 @@ ADD SOMETHING IN THE MIDDLE
 
 ## Q2 Letter Case Count
 .isalpha()
+
 .isupper()
+
 .islower()
 
 True & False
@@ -25,7 +28,9 @@ True & False
 
 ## Q4 Word Filter
 .split()
+
 sample:
+
 """
 txt = "welcome to the jungle"
 
@@ -38,13 +43,18 @@ Converting text into a list
 
 ## Q5 Prime Number Checker
 int()
+
 math.sqrt() 
+
 range()
+
 sample: 3 to 19, increment by 2
+
 """
 x = range(3, 20, 2)
 
 for n in x:
+
   print(n)
 """
 ## Q6 Leap Year Checker
@@ -52,6 +62,7 @@ for n in x:
 
 ## Q7 Date Scheduler
 https://www.w3schools.com/python/python_datetime.asp
+
 .replace()
 
 ## Q8 Compound Interest Calculator
@@ -59,6 +70,7 @@ https://www.w3schools.com/python/python_datetime.asp
 
 ## Q9 Factorial Calculator
 instance(number, int)
+
 for i in range()
 
 ## Q10 Fibonacci Sequence Calculator
