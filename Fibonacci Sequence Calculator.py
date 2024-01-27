@@ -21,9 +21,19 @@ Example Test Cases:
 
 
 def fibonacci_sequence(max_value):
-  list = [0,1]
-  while list[-1]+list[-2] < max_value:
-    list.append(list[-1]+ list[-2]
+    if max_value < 0:
+        return "Empty list or error message"
+    elif max_value == 0:
+        list = [0]
+        return list
+    else:
+        list = [0,1]
+        while list[-1] +list [-2] <= max_value:
+            a = list[-1] +list [-2]
+            list.append(a)
+        return list
+    
+
     # Your code goes here
     # Implement the Fibonacci sequence calculation using a while loop
     # Delete this after implementing some code inside this function
